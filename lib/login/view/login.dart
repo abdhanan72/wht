@@ -1,13 +1,19 @@
+
+
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:my_add/dashboard/view/dashboard.dart';
 import 'package:my_add/home/view/home.dart';
 
 class Login extends StatefulWidget {
-  const Login({super.key});
+  Login({super.key});
 
   @override
   State<Login> createState() => _LoginState();
 }
+
+final mailcontroller = TextEditingController();
+final passwordcontroller = TextEditingController();
 
 class _LoginState extends State<Login> {
   @override
@@ -65,6 +71,7 @@ class _LoginState extends State<Login> {
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 16),
                 child: TextField(
+                  controller: mailcontroller,
                   cursorColor: const Color(0xFF0BDA51),
                   decoration: InputDecoration(
                     hintText: 'Email',
@@ -87,6 +94,7 @@ class _LoginState extends State<Login> {
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 16),
                 child: TextField(
+                  controller: passwordcontroller,
                   obscureText: true,
                   cursorColor: const Color(0xFF0BDA51),
                   decoration: InputDecoration(
@@ -122,13 +130,7 @@ class _LoginState extends State<Login> {
                     style: ElevatedButton.styleFrom(
                       backgroundColor: const Color(0xFF0BDA51),
                     ),
-                    onPressed: () =>
-                        // ignore: inference_failure_on_instance_creation
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => Dashboard()
-                            ,),),
+                    onPressed:signin,
                     child: const Text('Sign in'),
                   ),
                 ),
@@ -158,5 +160,16 @@ class _LoginState extends State<Login> {
         ),
       ),
     );
+  }
+
+  Future signin() async {
+    try {
+      await FirebaseAuth.instance.signInWithEmailAndPassword(
+          email: mailcontroller.text, password: passwordcontroller.text);
+
+          Navigator.push(context,MaterialPageRoute(builder: (context) => Dashboard(),));
+    } on FirebaseAuthException catch (e) {
+      print(e.code);
+    }
   }
 }

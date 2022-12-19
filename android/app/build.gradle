@@ -26,7 +26,7 @@ def keystorePropertiesFile = rootProject.file('key.properties')
 if (keystorePropertiesFile.exists()) {
     keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
 }
-
+apply plugin: 'com.google.gms.google-services' 
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
@@ -110,5 +110,9 @@ flutter {
 }
 
 dependencies {
+    implementation platform('com.google.firebase:firebase-bom:31.1.1')
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'com.google.firebase:firebase-analytics'
 }
+
+

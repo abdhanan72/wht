@@ -1,4 +1,4 @@
-#Mon Dec 19 17:44:09 IST 2022
-base.0=D\:\\main_project\\my_add\\build\\app\\intermediates\\dex\\developmentDebug\\mergeDexDevelopmentDebug\\classes.dex
+#Mon Dec 19 21:42:19 IST 2022
+base.0=C\:\\Users\\hanan\\OneDrive\\Desktop\\ecm\\wht\\build\\app\\intermediates\\dex\\developmentDebug\\mergeDexDevelopmentDebug\\classes.dex
 renamed.0=classes.dex
 path.0=classes.dex

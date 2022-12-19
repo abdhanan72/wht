@@ -1,34 +1,17 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\main_project\\my_add\\build\\app\\intermediates\\incremental\\mergeDevelopmentDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "C:\\Users\\hanan\\OneDrive\\Desktop\\ecm\\wht\\build\\app\\intermediates\\incremental\\mergeDevelopmentDebugResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
-                    "source": "D:\\main_project\\my_add\\android\\app\\src\\development\\res\\values\\ic_launcher_background.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "56",
-                        "endOffsets": "107"
-                    },
-                    "to": {
-                        "startLines": "13",
-                        "startColumns": "4",
-                        "startOffsets": "611",
-                        "endColumns": "56",
-                        "endOffsets": "663"
-                    }
-                },
-                {
-                    "source": "D:\\main_project\\my_add\\android\\app\\src\\main\\res\\values\\styles.xml",
+                    "source": "C:\\Users\\hanan\\OneDrive\\Desktop\\ecm\\wht\\android\\app\\src\\main\\res\\values\\styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",
-                        "startOffsets": "173,816",
+                        "startOffsets": "176,830",
                         "endLines": "7,16",
                         "endColumns": "12,12",
-                        "endOffsets": "465,980"
+                        "endOffsets": "472,996"
                     },
                     "to": {
                         "startLines": "94,99",
@@ -37,6 +20,23 @@
                         "endLines": "98,101",
                         "endColumns": "12,12",
                         "endOffsets": "5811,5980"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\hanan\\OneDrive\\Desktop\\ecm\\wht\\android\\app\\src\\development\\res\\values\\ic_launcher_background.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "57",
+                        "endColumns": "56",
+                        "endOffsets": "109"
+                    },
+                    "to": {
+                        "startLines": "13",
+                        "startColumns": "4",
+                        "startOffsets": "611",
+                        "endColumns": "56",
+                        "endOffsets": "663"
                     }
                 },
                 {

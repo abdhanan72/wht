@@ -4,7 +4,7 @@ import 'package:my_add/home/view/home.dart';
 import 'package:my_add/product/view/product.dart';
 
 class Dashboard extends StatefulWidget {
-   Dashboard({super.key});
+   const Dashboard({super.key});
  
 
   @override
