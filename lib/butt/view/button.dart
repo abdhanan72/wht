@@ -12,6 +12,9 @@ class AddProduct extends StatelessWidget {
           child: Column(
             
             children: [
+              TextButton(onPressed: () {
+                
+              }, child:Text('Upload Image',style: TextStyle(color: Color(0xFF0BDA51)),)),
               Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 16),
                     child: TextField(
