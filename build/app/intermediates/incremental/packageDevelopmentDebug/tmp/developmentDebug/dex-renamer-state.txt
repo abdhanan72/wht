@@ -1,4 +1,10 @@
-#Tue Dec 20 14:41:26 IST 2022
+#Thu Dec 22 18:05:01 IST 2022
+base.2=D\:\\wht\\build\\app\\intermediates\\dex\\developmentDebug\\mergeDexDevelopmentDebug\\classes3.dex
+path.2=classes3.dex
+base.1=D\:\\wht\\build\\app\\intermediates\\dex\\developmentDebug\\mergeDexDevelopmentDebug\\classes2.dex
+path.1=classes2.dex
 base.0=D\:\\wht\\build\\app\\intermediates\\dex\\developmentDebug\\mergeDexDevelopmentDebug\\classes.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
 renamed.0=classes.dex
 path.0=classes.dex

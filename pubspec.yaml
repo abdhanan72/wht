@@ -9,15 +9,22 @@ environment:
 
 dependencies:
   bloc: ^8.1.0
+  cloud_firestore: ^4.2.0
+  cross_file: ^0.3.3+2
   firebase_auth: ^4.1.0
   firebase_core: ^2.1.1
+  firebase_messaging: ^14.1.4
+  firebase_storage: ^11.0.8
   flutter:
     sdk: flutter
   flutter_bloc: ^8.1.1
   flutter_localizations:
     sdk: flutter
+  image_picker: ^0.8.6
   intl: ^0.17.0
   motion_toast: ^2.6.4
+  uuid: ^3.0.7
+  xfile: ^1.1.0
 
 dev_dependencies:
   bloc_test: ^9.1.0
