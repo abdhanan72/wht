@@ -34,7 +34,7 @@ class _LoginState extends State<Login> {
       child: BlocListener<AuthBloc, AuthState>(
         listener: (context, state) {
           if (state is LoginSucces) {
-            Navigator.push(
+            Navigator.pushReplacement(
                 context,
                 MaterialPageRoute(
                   builder: (context) => Dashboard(),

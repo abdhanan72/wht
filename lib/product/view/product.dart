@@ -1,15 +1,37 @@
 import 'package:flutter/material.dart';
-import 'package:my_add/butt/view/button.dart';
+
 
 class ViewProduct extends StatelessWidget {
   const ViewProduct({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return  
-    Scaffold(
-       floatingActionButton: FloatingActionButton(onPressed:() => Navigator.push(context,MaterialPageRoute(builder: (context) => AddProduct(),)),child:const  Icon(Icons.add),),
-      body: const Text('data'),
+    return Scaffold(
+      
+      body: GridView.builder(
+          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+            mainAxisExtent: 280,
+            crossAxisCount: 2,
+          ),
+          itemCount: 2,
+          itemBuilder: (BuildContext context, int index) {
+            return GestureDetector(
+              onTap: () {
+                
+              },
+              child: Card(child: Column(children: [
+                Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtESFjvzaJpiy4RQvS8n7diWPlQfHSUH9j1w&usqp=CAU',
+                height: 200,
+                width: 140,
+                ),
+                Title(color: Colors.black, child:Text('food'),
+                ),
+            
+                const Text(r'60$'),
+              
+              ],),),
+            );
+          }),
     );
   }
 }

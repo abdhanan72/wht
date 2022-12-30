@@ -15,6 +15,8 @@ class AddProductBloc extends Bloc<AddProductEvent, AddProductState> {
   AddProductBloc() : super(AddProductInitial()) {
     on<AddProductEvent>((event, emit) async {
       if (event is ProductAddEvent) {
+        print('===================================');
+        print(event.image.path);
         try {
           final productRef =
               FirebaseFirestore.instance.collection('Product Details');
@@ -47,6 +49,7 @@ class AddProductBloc extends Bloc<AddProductEvent, AddProductState> {
 
           emit(ProductAddedSucces());
         } catch (e) {
+          print('--------------------------------------------$e');
           emit(ProductAddFailed());
         }
       }

@@ -4,6 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:motion_toast/motion_toast.dart';
 import 'package:my_add/butt/bloc/add_product_bloc.dart';
+import 'package:my_add/product/view/product.dart';
 
 class AddProduct extends StatelessWidget {
   AddProduct({super.key});
@@ -30,7 +31,7 @@ class AddProduct extends StatelessWidget {
       child: BlocListener<AddProductBloc, AddProductState>(
         listener: (context, state) {
           if (state is ProductAddedSucces) {
-            Navigator.pop(context);
+            Navigator.push(context,MaterialPageRoute(builder:(context) => ViewProduct(),));
             MotionToast(
               icon: Icons.done,
               primaryColor: Colors.green,
@@ -98,6 +99,7 @@ class AddProduct extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 16),
                     child: TextField(
+                      keyboardType: TextInputType.number,
                       controller: quantitycontroller,
                       cursorColor: const Color(0xFF0BDA51),
                       decoration: InputDecoration(
@@ -116,7 +118,9 @@ class AddProduct extends StatelessWidget {
                   ),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 16),
-                    child: TextField(
+                    child: TextField(keyboardType: TextInputType.number,
+                      
+                    
                       controller: pricecontroller,
                       cursorColor: const Color(0xFF0BDA51),
                       decoration: InputDecoration(
