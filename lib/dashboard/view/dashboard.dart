@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:my_add/butt/view/button.dart';
-import 'package:my_add/cart/view/cart.dart';
 import 'package:my_add/home/view/home.dart';
 import 'package:my_add/product/view/product.dart';
 
@@ -24,8 +23,8 @@ class _DashboardState extends State<Dashboard> {
   }
 
     final List<Widget> _widgets = [
-const Home(),
-const ViewProduct(),
+
+ ViewProduct(),
  AddProduct(),
   ];
   @override
@@ -44,19 +43,14 @@ const ViewProduct(),
       ),
       body:_widgets [_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
-        selectedItemColor:const  Color(0xFF0BDA51),
+        selectedItemColor:const  Color(0xFFF50514),
         items: const <BottomNavigationBarItem>[
+          
           BottomNavigationBarItem(
               icon: Icon(
-                Icons.home,
+                Icons.home_filled,
               ),
               label: 'Home',
-              backgroundColor: Colors.black,),
-          BottomNavigationBarItem(
-              icon: Icon(
-                Icons.category,
-              ),
-              label: 'view product',
               backgroundColor: Colors.black,),
           BottomNavigationBarItem(
               icon: Icon(Icons.add_box_sharp),

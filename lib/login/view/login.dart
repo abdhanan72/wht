@@ -77,7 +77,7 @@ class _LoginState extends State<Login> {
                     'Welcome Back John!',
                     style: TextStyle(
                       color: Color(
-                        0xFF0BDA51,
+                        0xFFF50514,
                       ),
                       fontSize: 22,
                       fontWeight: FontWeight.bold,
@@ -101,7 +101,7 @@ class _LoginState extends State<Login> {
                     padding: const EdgeInsets.symmetric(horizontal: 16),
                     child: TextField(
                       controller: mailcontroller,
-                      cursorColor: const Color(0xFF0BDA51),
+                      cursorColor: const Color(0xFFF50514),
                       decoration: InputDecoration(
                         hintText: 'Email',
                         border: OutlineInputBorder(
@@ -111,7 +111,7 @@ class _LoginState extends State<Login> {
                         filled: true,
                         prefixIcon: const Icon(
                           Icons.mail,
-                          color: Color(0xFF0BDA51),
+                          color: Color(0xFFF50514),
                         ),
                         fillColor: Colors.grey.shade300,
                       ),
@@ -125,7 +125,7 @@ class _LoginState extends State<Login> {
                     child: TextField(
                       controller: passwordcontroller,
                       obscureText: _obscuretext,
-                      cursorColor: const Color(0xFF0BDA51),
+                      cursorColor: const Color(0xFFF50514),
                       decoration: InputDecoration(
                         hintText: 'Password',
                         border: OutlineInputBorder(
@@ -137,13 +137,13 @@ class _LoginState extends State<Login> {
                           icon: Icon(
                             _obscuretext
                                 ? Icons.remove_red_eye_outlined
-                                : Icons.visibility_off,color: Color(0xFF0BDA51),
+                                : Icons.visibility_off,color: Color(0xFFF50514),
                           ),
                           onPressed: _toggle,
                         ),
                         prefixIcon: const Icon(
                           Icons.lock,
-                          color: Color(0xFF0BDA51),
+                          color: Color(0xFFF50514),
                         ),
                         fillColor: Colors.grey.shade300,
                       ),
@@ -165,7 +165,7 @@ class _LoginState extends State<Login> {
                       padding: const EdgeInsets.symmetric(horizontal: 12),
                       child: ElevatedButton(
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: const Color(0xFF0BDA51),
+                          backgroundColor: const Color(0xFFF50514),
                         ),
                         onPressed: () => _auth.add(
                           LoginEvent(

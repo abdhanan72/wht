@@ -4,6 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:motion_toast/motion_toast.dart';
 import 'package:my_add/butt/bloc/add_product_bloc.dart';
+import 'package:my_add/dashboard/view/dashboard.dart';
 import 'package:my_add/product/view/product.dart';
 
 class AddProduct extends StatelessWidget {
@@ -31,16 +32,20 @@ class AddProduct extends StatelessWidget {
       child: BlocListener<AddProductBloc, AddProductState>(
         listener: (context, state) {
           if (state is ProductAddedSucces) {
-            Navigator.push(context,MaterialPageRoute(builder:(context) => ViewProduct(),));
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => Dashboard(),
+                ));
             MotionToast(
               icon: Icons.done,
-              primaryColor: Colors.green,
+              primaryColor: Colors.red,
               description: const Text(' successfully Added'),
             ).show(context);
           } else {
             MotionToast(
               icon: Icons.done,
-              primaryColor: Colors.green,
+              primaryColor: Colors.red,
               description: const Text(' Failed'),
             ).show(context);
           }
@@ -55,14 +60,14 @@ class AddProduct extends StatelessWidget {
                     onPressed: getImage,
                     child: const Text(
                       'Upload Image',
-                      style: TextStyle(color: Color(0xFF0BDA51)),
+                      style: TextStyle(color: Color(0xFFF50514)),
                     ),
                   ),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 16),
                     child: TextField(
                       controller: namecontroller,
-                      cursorColor: const Color(0xFF0BDA51),
+                      cursorColor: const Color(0xFFF50514),
                       decoration: InputDecoration(
                         hintText: 'Product Name',
                         border: OutlineInputBorder(
@@ -81,7 +86,7 @@ class AddProduct extends StatelessWidget {
                     padding: const EdgeInsets.symmetric(horizontal: 16),
                     child: TextField(
                       controller: detailconrtoller,
-                      cursorColor: const Color(0xFF0BDA51),
+                      cursorColor: const Color(0xFFF50514),
                       decoration: InputDecoration(
                         hintText: 'Product Details',
                         border: OutlineInputBorder(
@@ -101,7 +106,7 @@ class AddProduct extends StatelessWidget {
                     child: TextField(
                       keyboardType: TextInputType.number,
                       controller: quantitycontroller,
-                      cursorColor: const Color(0xFF0BDA51),
+                      cursorColor: const Color(0xFFF50514),
                       decoration: InputDecoration(
                         hintText: 'Product quantity',
                         border: OutlineInputBorder(
@@ -118,11 +123,10 @@ class AddProduct extends StatelessWidget {
                   ),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 16),
-                    child: TextField(keyboardType: TextInputType.number,
-                      
-                    
+                    child: TextField(
+                      keyboardType: TextInputType.number,
                       controller: pricecontroller,
-                      cursorColor: const Color(0xFF0BDA51),
+                      cursorColor: const Color(0xFFF50514),
                       decoration: InputDecoration(
                         hintText: 'Price',
                         border: OutlineInputBorder(
@@ -139,7 +143,7 @@ class AddProduct extends StatelessWidget {
                   ),
                   ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: const Color(0xFF0BDA51),
+                      backgroundColor: const Color(0xFFF50514),
                     ),
                     onPressed: () {
                       _addproduct.add(

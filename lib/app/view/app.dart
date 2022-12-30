@@ -10,9 +10,9 @@ class App extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        appBarTheme: const AppBarTheme(color: Color(0xFF0BDA51)),
+        appBarTheme: const AppBarTheme(color: Color(0xFFF50514)),
         colorScheme: ColorScheme.fromSwatch(
-          accentColor: const Color(0xFF0BDA51),
+          accentColor: const Color(0xFFF50514),
         ),
       ),
       localizationsDelegates: AppLocalizations.localizationsDelegates,

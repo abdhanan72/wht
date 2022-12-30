@@ -1,37 +1,83 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+
 import 'package:flutter/material.dart';
 
-
 class ViewProduct extends StatelessWidget {
-  const ViewProduct({super.key});
+  ViewProduct({super.key});
 
+  CollectionReference productData =
+      FirebaseFirestore.instance.collection('Product Details');
+
+  final FirebaseAuth _auth = FirebaseAuth.instance;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
-      body: GridView.builder(
-          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-            mainAxisExtent: 280,
-            crossAxisCount: 2,
-          ),
-          itemCount: 2,
-          itemBuilder: (BuildContext context, int index) {
-            return GestureDetector(
-              onTap: () {
-                
-              },
-              child: Card(child: Column(children: [
-                Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtESFjvzaJpiy4RQvS8n7diWPlQfHSUH9j1w&usqp=CAU',
-                height: 200,
-                width: 140,
-                ),
-                Title(color: Colors.black, child:Text('food'),
-                ),
-            
-                const Text(r'60$'),
-              
-              ],),),
+      body: StreamBuilder(
+        stream: productData
+            .where('userid', isEqualTo: _auth.currentUser!.uid)
+            .snapshots(),
+        builder: (context, AsyncSnapshot<QuerySnapshot> snapshot) {
+          if (snapshot.hasData) {
+            final productItems = snapshot.data!.docs;
+
+            return Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: GridView.builder(
+                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 2,
+                  mainAxisExtent: 250
+                ,),
+                itemCount: productItems.length,
+                itemBuilder: (BuildContext context, int index) {
+                  return Card(
+                    
+                    child: Column(children: [
+
+                     const  SizedBox(height: 20,),
+
+                      Image.network(
+                        
+                        productItems[index]['image'].toString(),
+                        height: 150,
+                        width: 150,
+                        ),
+                       const  SizedBox(height: 10,),
+
+                       Text(productItems[index]['productName'].toString(),
+                        style: const TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 18
+                        ,),
+                       ),
+
+
+
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                          Text(productItems[index]['price'].toString(),
+                        style: const TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 20
+                        ),
+                        ),
+                       const  Icon(Icons.currency_rupee_sharp),
+                        ],)
+
+
+
+                    ],),
+                  );
+                },
+              ),
             );
-          }),
+          }
+          else{
+            return const Center(child: CircularProgressIndicator());
+          }
+        },
+      ),
     );
   }
 }
