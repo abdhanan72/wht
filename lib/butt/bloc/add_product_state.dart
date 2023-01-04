@@ -5,8 +5,8 @@ abstract class AddProductState {}
 
 class AddProductInitial extends AddProductState {}
 
-
 class ProductAddedSucces extends AddProductState {}
 
-class ProductAddFailed extends AddProductState{}
-
+class ProductAddFailed extends AddProductState {
+  ProductAddFailed();
+}

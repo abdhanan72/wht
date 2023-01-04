@@ -1,20 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:my_add/butt/view/button.dart';
-import 'package:my_add/home/view/home.dart';
 import 'package:my_add/product/view/product.dart';
 
 class Dashboard extends StatefulWidget {
-   const Dashboard({super.key});
- 
+  const Dashboard({super.key});
 
   @override
   State<Dashboard> createState() => _DashboardState();
-  
+
   void setState(Null Function() param0) {}
 }
 
 class _DashboardState extends State<Dashboard> {
-   int _selectedIndex = 1;
+  int _selectedIndex = 0;
 
   void onItemTapped(int index) {
     setState(() {
@@ -22,46 +20,42 @@ class _DashboardState extends State<Dashboard> {
     });
   }
 
-    final List<Widget> _widgets = [
-
- ViewProduct(),
- AddProduct(),
+  final List<Widget> _widgets = [
+    ViewProduct(),
+    AddProduct(),
   ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
       appBar: AppBar(
-
         title: const Text('Product List'),
-       
-        actions: [IconButton(onPressed:() {
-          
-        }, icon: const Icon(Icons.person),),],
-
-      
+        actions: [
+          IconButton(
+            onPressed: () {},
+            icon: const Icon(Icons.person),
+          ),
+        ],
       ),
-      body:_widgets [_selectedIndex],
+      body: _widgets[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
-        selectedItemColor:const  Color(0xFFF50514),
+        selectedItemColor: const Color(0xFFF50514),
         items: const <BottomNavigationBarItem>[
-          
           BottomNavigationBarItem(
-              icon: Icon(
-                Icons.home_filled,
-              ),
-              label: 'Home',
-              backgroundColor: Colors.black,),
+            icon: Icon(
+              Icons.home_filled,
+            ),
+            label: 'Home',
+            backgroundColor: Colors.black,
+          ),
           BottomNavigationBarItem(
-              icon: Icon(Icons.add_box_sharp),
-              label: 'add product',
-              backgroundColor: Colors.black,),
-        
+            icon: Icon(Icons.add_box_sharp),
+            label: 'add product',
+            backgroundColor: Colors.black,
+          ),
         ],
         currentIndex: _selectedIndex,
         onTap: onItemTapped,
       ),
-    
     );
   }
 }

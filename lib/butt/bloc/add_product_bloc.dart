@@ -23,7 +23,7 @@ class AddProductBloc extends Bloc<AddProductEvent, AddProductState> {
 
           final auth = FirebaseAuth.instance;
           final userid = auth.currentUser!.uid;
-          final uuid = Uuid();
+          final uuid = const Uuid();
           final productId = uuid.v4();
           final datetime = DateTime.now();
           final time = '${datetime.hour}:${datetime.minute}pm';

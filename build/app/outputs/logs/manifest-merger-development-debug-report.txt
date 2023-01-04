@@ -43,6 +43,8 @@ MERGED from [com.google.firebase:firebase-installations:17.1.0] C:\Users\hanan\.
 MERGED from [com.google.firebase:firebase-installations:17.1.0] C:\Users\hanan\.gradle\caches\transforms-3\46d5db73e72bf22e3cc73af304f9b359\transformed\jetified-firebase-installations-17.1.0\AndroidManifest.xml:13:5-21:19
 MERGED from [com.google.firebase:firebase-common:20.2.0] C:\Users\hanan\.gradle\caches\transforms-3\1f5293cac7ee6599710ad386efb328c8\transformed\jetified-firebase-common-20.2.0\AndroidManifest.xml:24:5-37:19
 MERGED from [com.google.firebase:firebase-common:20.2.0] C:\Users\hanan\.gradle\caches\transforms-3\1f5293cac7ee6599710ad386efb328c8\transformed\jetified-firebase-common-20.2.0\AndroidManifest.xml:24:5-37:19
+MERGED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\hanan\.gradle\caches\transforms-3\dd0d2217c709d3be1733acaa83aa75a0\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:36:5-42:19
+MERGED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\hanan\.gradle\caches\transforms-3\dd0d2217c709d3be1733acaa83aa75a0\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:36:5-42:19
 MERGED from [com.google.android.gms:play-services-measurement:21.2.0] C:\Users\hanan\.gradle\caches\transforms-3\b65a724ef59d81a63825d8f0d7950926\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:28:5-44:19
 MERGED from [com.google.android.gms:play-services-measurement:21.2.0] C:\Users\hanan\.gradle\caches\transforms-3\b65a724ef59d81a63825d8f0d7950926\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:28:5-44:19
 MERGED from [com.google.android.gms:play-services-measurement-sdk:21.2.0] C:\Users\hanan\.gradle\caches\transforms-3\0b538164f438c8f47b1bbef82edd6412\transformed\jetified-play-services-measurement-sdk-21.2.0\AndroidManifest.xml:22:5-23:19
@@ -86,8 +88,10 @@ MERGED from [:firebase_storage] D:\wht\build\firebase_storage\intermediates\merg
 MERGED from [:cloud_firestore] D:\wht\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-17:12
 MERGED from [:firebase_messaging] D:\wht\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-50:12
 MERGED from [:firebase_core] D:\wht\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-17:12
+MERGED from [:google_maps_flutter_android] D:\wht\build\google_maps_flutter_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:image_picker_android] D:\wht\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-21:12
 MERGED from [:flutter_plugin_android_lifecycle] D:\wht\build\flutter_plugin_android_lifecycle\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:path_provider_android] D:\wht\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\hanan\.gradle\caches\transforms-3\19c2addc77a9b3f8566c6804366b0253\transformed\multidex-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\hanan\.gradle\caches\transforms-3\28daf90d95404355e6e365bb554f1b5f\transformed\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:17:1-23:12
 MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\hanan\.gradle\caches\transforms-3\898cbb911d0e06d2c9dea240545edf75\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:17:1-33:12
@@ -106,6 +110,7 @@ MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\hanan\.g
 MERGED from [com.google.firebase:firebase-appcheck-interop:16.1.0] C:\Users\hanan\.gradle\caches\transforms-3\f461f031f96b3e49600f13e9c6d46186\transformed\jetified-firebase-appcheck-interop-16.1.0\AndroidManifest.xml:15:1-25:12
 MERGED from [com.google.firebase:firebase-installations:17.1.0] C:\Users\hanan\.gradle\caches\transforms-3\46d5db73e72bf22e3cc73af304f9b359\transformed\jetified-firebase-installations-17.1.0\AndroidManifest.xml:2:1-23:12
 MERGED from [com.google.firebase:firebase-common:20.2.0] C:\Users\hanan\.gradle\caches\transforms-3\1f5293cac7ee6599710ad386efb328c8\transformed\jetified-firebase-common-20.2.0\AndroidManifest.xml:15:1-39:12
+MERGED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\hanan\.gradle\caches\transforms-3\dd0d2217c709d3be1733acaa83aa75a0\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:17:1-44:12
 MERGED from [com.google.android.gms:play-services-measurement:21.2.0] C:\Users\hanan\.gradle\caches\transforms-3\b65a724ef59d81a63825d8f0d7950926\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:17:1-46:12
 MERGED from [com.google.android.gms:play-services-measurement-sdk:21.2.0] C:\Users\hanan\.gradle\caches\transforms-3\0b538164f438c8f47b1bbef82edd6412\transformed\jetified-play-services-measurement-sdk-21.2.0\AndroidManifest.xml:17:1-25:12
 MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] C:\Users\hanan\.gradle\caches\transforms-3\9095fd7bd4bff87c68a7fccfd6d50658\transformed\jetified-play-services-auth-api-phone-17.4.0\AndroidManifest.xml:2:1-7:12
@@ -180,10 +185,14 @@ MERGED from [:firebase_messaging] D:\wht\build\firebase_messaging\intermediates\
 MERGED from [:firebase_messaging] D:\wht\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:firebase_core] D:\wht\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:firebase_core] D:\wht\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:google_maps_flutter_android] D:\wht\build\google_maps_flutter_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:google_maps_flutter_android] D:\wht\build\google_maps_flutter_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:image_picker_android] D:\wht\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:image_picker_android] D:\wht\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:flutter_plugin_android_lifecycle] D:\wht\build\flutter_plugin_android_lifecycle\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:flutter_plugin_android_lifecycle] D:\wht\build\flutter_plugin_android_lifecycle\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:path_provider_android] D:\wht\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:path_provider_android] D:\wht\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\hanan\.gradle\caches\transforms-3\19c2addc77a9b3f8566c6804366b0253\transformed\multidex-2.0.0\AndroidManifest.xml:20:5-43
 MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\hanan\.gradle\caches\transforms-3\19c2addc77a9b3f8566c6804366b0253\transformed\multidex-2.0.0\AndroidManifest.xml:20:5-43
 MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\hanan\.gradle\caches\transforms-3\28daf90d95404355e6e365bb554f1b5f\transformed\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:19:5-21:41
@@ -220,6 +229,8 @@ MERGED from [com.google.firebase:firebase-installations:17.1.0] C:\Users\hanan\.
 MERGED from [com.google.firebase:firebase-installations:17.1.0] C:\Users\hanan\.gradle\caches\transforms-3\46d5db73e72bf22e3cc73af304f9b359\transformed\jetified-firebase-installations-17.1.0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.firebase:firebase-common:20.2.0] C:\Users\hanan\.gradle\caches\transforms-3\1f5293cac7ee6599710ad386efb328c8\transformed\jetified-firebase-common-20.2.0\AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-common:20.2.0] C:\Users\hanan\.gradle\caches\transforms-3\1f5293cac7ee6599710ad386efb328c8\transformed\jetified-firebase-common-20.2.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\hanan\.gradle\caches\transforms-3\dd0d2217c709d3be1733acaa83aa75a0\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\hanan\.gradle\caches\transforms-3\dd0d2217c709d3be1733acaa83aa75a0\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-measurement:21.2.0] C:\Users\hanan\.gradle\caches\transforms-3\b65a724ef59d81a63825d8f0d7950926\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-measurement:21.2.0] C:\Users\hanan\.gradle\caches\transforms-3\b65a724ef59d81a63825d8f0d7950926\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-measurement-sdk:21.2.0] C:\Users\hanan\.gradle\caches\transforms-3\0b538164f438c8f47b1bbef82edd6412\transformed\jetified-play-services-measurement-sdk-21.2.0\AndroidManifest.xml:20:5-44
@@ -332,6 +343,8 @@ MERGED from [com.google.android.gms:play-services-measurement-api:21.2.0] C:\Use
 MERGED from [com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\hanan\.gradle\caches\transforms-3\73796134b657eecdf04a243e5f341c08\transformed\jetified-play-services-measurement-api-21.2.0\AndroidManifest.xml:22:5-67
 MERGED from [com.google.firebase:firebase-installations:17.1.0] C:\Users\hanan\.gradle\caches\transforms-3\46d5db73e72bf22e3cc73af304f9b359\transformed\jetified-firebase-installations-17.1.0\AndroidManifest.xml:10:5-67
 MERGED from [com.google.firebase:firebase-installations:17.1.0] C:\Users\hanan\.gradle\caches\transforms-3\46d5db73e72bf22e3cc73af304f9b359\transformed\jetified-firebase-installations-17.1.0\AndroidManifest.xml:10:5-67
+MERGED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\hanan\.gradle\caches\transforms-3\dd0d2217c709d3be1733acaa83aa75a0\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\hanan\.gradle\caches\transforms-3\dd0d2217c709d3be1733acaa83aa75a0\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:24:5-67
 MERGED from [com.google.android.gms:play-services-measurement:21.2.0] C:\Users\hanan\.gradle\caches\transforms-3\b65a724ef59d81a63825d8f0d7950926\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-measurement:21.2.0] C:\Users\hanan\.gradle\caches\transforms-3\b65a724ef59d81a63825d8f0d7950926\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.1] C:\Users\hanan\.gradle\caches\transforms-3\db150b516683ad41d878f2a1c72d580a\transformed\jetified-play-services-cloud-messaging-17.0.1\AndroidManifest.xml:8:5-67
@@ -434,6 +447,8 @@ MERGED from [com.google.android.gms:play-services-measurement-api:21.2.0] C:\Use
 MERGED from [com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\hanan\.gradle\caches\transforms-3\73796134b657eecdf04a243e5f341c08\transformed\jetified-play-services-measurement-api-21.2.0\AndroidManifest.xml:23:5-79
 MERGED from [com.google.firebase:firebase-installations:17.1.0] C:\Users\hanan\.gradle\caches\transforms-3\46d5db73e72bf22e3cc73af304f9b359\transformed\jetified-firebase-installations-17.1.0\AndroidManifest.xml:9:5-79
 MERGED from [com.google.firebase:firebase-installations:17.1.0] C:\Users\hanan\.gradle\caches\transforms-3\46d5db73e72bf22e3cc73af304f9b359\transformed\jetified-firebase-installations-17.1.0\AndroidManifest.xml:9:5-79
+MERGED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\hanan\.gradle\caches\transforms-3\dd0d2217c709d3be1733acaa83aa75a0\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\hanan\.gradle\caches\transforms-3\dd0d2217c709d3be1733acaa83aa75a0\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:23:5-79
 MERGED from [com.google.android.gms:play-services-measurement:21.2.0] C:\Users\hanan\.gradle\caches\transforms-3\b65a724ef59d81a63825d8f0d7950926\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:24:5-79
 MERGED from [com.google.android.gms:play-services-measurement:21.2.0] C:\Users\hanan\.gradle\caches\transforms-3\b65a724ef59d81a63825d8f0d7950926\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:24:5-79
 MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.1] C:\Users\hanan\.gradle\caches\transforms-3\db150b516683ad41d878f2a1c72d580a\transformed\jetified-play-services-cloud-messaging-17.0.1\AndroidManifest.xml:7:5-79
@@ -706,6 +721,24 @@ ADDED from [com.google.firebase:firebase-common:20.2.0] C:\Users\hanan\.gradle\c
 		ADDED from [com.google.firebase:firebase-common:20.2.0] C:\Users\hanan\.gradle\caches\transforms-3\1f5293cac7ee6599710ad386efb328c8\transformed\jetified-firebase-common-20.2.0\AndroidManifest.xml:30:13-36
 	android:name
 		ADDED from [com.google.firebase:firebase-common:20.2.0] C:\Users\hanan\.gradle\caches\transforms-3\1f5293cac7ee6599710ad386efb328c8\transformed\jetified-firebase-common-20.2.0\AndroidManifest.xml:26:13-77
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\hanan\.gradle\caches\transforms-3\dd0d2217c709d3be1733acaa83aa75a0\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:26:5-28:35
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\hanan\.gradle\caches\transforms-3\dd0d2217c709d3be1733acaa83aa75a0\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:27:9-41
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\hanan\.gradle\caches\transforms-3\dd0d2217c709d3be1733acaa83aa75a0\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:28:9-32
+queries
+ADDED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\hanan\.gradle\caches\transforms-3\dd0d2217c709d3be1733acaa83aa75a0\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:30:5-34:15
+package#com.google.android.apps.maps
+ADDED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\hanan\.gradle\caches\transforms-3\dd0d2217c709d3be1733acaa83aa75a0\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:33:9-64
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\hanan\.gradle\caches\transforms-3\dd0d2217c709d3be1733acaa83aa75a0\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:33:18-61
+uses-library#org.apache.http.legacy
+ADDED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\hanan\.gradle\caches\transforms-3\dd0d2217c709d3be1733acaa83aa75a0\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:39:9-41:40
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\hanan\.gradle\caches\transforms-3\dd0d2217c709d3be1733acaa83aa75a0\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:41:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:18.1.0] C:\Users\hanan\.gradle\caches\transforms-3\dd0d2217c709d3be1733acaa83aa75a0\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:40:13-50
 uses-permission#com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
 ADDED from [com.google.android.gms:play-services-measurement:21.2.0] C:\Users\hanan\.gradle\caches\transforms-3\b65a724ef59d81a63825d8f0d7950926\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:26:5-110
 MERGED from [com.google.android.gms:play-services-measurement-impl:21.2.0] C:\Users\hanan\.gradle\caches\transforms-3\016ac26b8a7d144afce3e2c123c72d86\transformed\jetified-play-services-measurement-impl-21.2.0\AndroidManifest.xml:26:5-110

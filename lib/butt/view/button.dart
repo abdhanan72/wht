@@ -17,6 +17,7 @@ class AddProduct extends StatelessWidget {
     final imagePicker = ImagePicker();
 
     img = await imagePicker.pickImage(source: ImageSource.gallery);
+  
   }
 
   final namecontroller = TextEditingController();
@@ -34,6 +35,7 @@ class AddProduct extends StatelessWidget {
           if (state is ProductAddedSucces) {
             Navigator.push(
                 context,
+                
                 MaterialPageRoute(
                   builder: (context) => Dashboard(),
                 ));
@@ -54,111 +56,113 @@ class AddProduct extends StatelessWidget {
           body: SafeArea(
             child: Padding(
               padding: const EdgeInsets.only(top: 30),
-              child: Column(
-                children: [
-                  TextButton(
-                    onPressed: getImage,
-                    child: const Text(
-                      'Upload Image',
-                      style: TextStyle(color: Color(0xFFF50514)),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 16),
-                    child: TextField(
-                      controller: namecontroller,
-                      cursorColor: const Color(0xFFF50514),
-                      decoration: InputDecoration(
-                        hintText: 'Product Name',
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(10),
-                          borderSide: BorderSide.none,
-                        ),
-                        filled: true,
-                        fillColor: Colors.grey.shade300,
+              child: SingleChildScrollView(
+                child: Column(
+                  children: [
+                    TextButton(
+                      onPressed: getImage,
+                      child: const Text(
+                        'Upload Image',
+                        style: TextStyle(color: Color(0xFFF50514)),
                       ),
                     ),
-                  ),
-                  const SizedBox(
-                    height: 20,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 16),
-                    child: TextField(
-                      controller: detailconrtoller,
-                      cursorColor: const Color(0xFFF50514),
-                      decoration: InputDecoration(
-                        hintText: 'Product Details',
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(10),
-                          borderSide: BorderSide.none,
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 16),
+                      child: TextField(
+                        controller: namecontroller,
+                        cursorColor: const Color(0xFFF50514),
+                        decoration: InputDecoration(
+                          hintText: 'Product Name',
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(10),
+                            borderSide: BorderSide.none,
+                          ),
+                          filled: true,
+                          fillColor: Colors.grey.shade300,
                         ),
-                        filled: true,
-                        fillColor: Colors.grey.shade300,
                       ),
                     ),
-                  ),
-                  const SizedBox(
-                    height: 20,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 16),
-                    child: TextField(
-                      keyboardType: TextInputType.number,
-                      controller: quantitycontroller,
-                      cursorColor: const Color(0xFFF50514),
-                      decoration: InputDecoration(
-                        hintText: 'Product quantity',
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(10),
-                          borderSide: BorderSide.none,
+                    const SizedBox(
+                      height: 20,
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 16),
+                      child: TextField(maxLines: 7,
+                        controller: detailconrtoller,
+                        cursorColor: const Color(0xFFF50514),
+                        decoration: InputDecoration(
+                          hintText: 'Product Details',
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(10),
+                            borderSide: BorderSide.none,
+                          ),
+                          filled: true,
+                          fillColor: Colors.grey.shade300,
                         ),
-                        filled: true,
-                        fillColor: Colors.grey.shade300,
                       ),
                     ),
-                  ),
-                  const SizedBox(
-                    height: 20,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 16),
-                    child: TextField(
-                      keyboardType: TextInputType.number,
-                      controller: pricecontroller,
-                      cursorColor: const Color(0xFFF50514),
-                      decoration: InputDecoration(
-                        hintText: 'Price',
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(10),
-                          borderSide: BorderSide.none,
+                    const SizedBox(
+                      height: 20,
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 16),
+                      child: TextField(
+                        keyboardType: TextInputType.number,
+                        controller: quantitycontroller,
+                        cursorColor: const Color(0xFFF50514),
+                        decoration: InputDecoration(
+                          hintText: 'Product quantity',
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(10),
+                            borderSide: BorderSide.none,
+                          ),
+                          filled: true,
+                          fillColor: Colors.grey.shade300,
                         ),
-                        filled: true,
-                        fillColor: Colors.grey.shade300,
                       ),
                     ),
-                  ),
-                  const SizedBox(
-                    height: 20,
-                  ),
-                  ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: const Color(0xFFF50514),
+                    const SizedBox(
+                      height: 20,
                     ),
-                    onPressed: () {
-                      _addproduct.add(
-                        ProductAddEvent(
-                          productname: namecontroller.text,
-                          productDetails: detailconrtoller.text,
-                          quantity: int.parse(quantitycontroller.text),
-                          price: double.parse(pricecontroller.text),
-                          image: img!,
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 16),
+                      child: TextField(
+                        keyboardType: TextInputType.number,
+                        controller: pricecontroller,
+                        cursorColor: const Color(0xFFF50514),
+                        decoration: InputDecoration(
+                          hintText: 'Price',
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(10),
+                            borderSide: BorderSide.none,
+                          ),
+                          filled: true,
+                          fillColor: Colors.grey.shade300,
                         ),
-                      );
-                    },
-                    child: const Text('ADD'),
-                  )
-                ],
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 20,
+                    ),
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: const Color(0xFFF50514),
+                      ),
+                      onPressed: () {
+                        _addproduct.add(
+                          ProductAddEvent(
+                            productname: namecontroller.text,
+                            productDetails: detailconrtoller.text,
+                            quantity: int.parse(quantitycontroller.text),
+                            price: double.parse(pricecontroller.text),
+                            image: img!,
+                          ),
+                        );
+                      },
+                      child: const Text('ADD'),
+                    )
+                  ],
+                ),
               ),
             ),
           ),

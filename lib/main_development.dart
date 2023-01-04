@@ -6,5 +6,5 @@ import 'package:my_add/bootstrap.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
-  bootstrap(() => const App());
+  await bootstrap(() => const App());
 }
