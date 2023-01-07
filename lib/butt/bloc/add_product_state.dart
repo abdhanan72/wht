@@ -10,3 +10,5 @@ class ProductAddedSucces extends AddProductState {}
 class ProductAddFailed extends AddProductState {
   ProductAddFailed();
 }
+
+

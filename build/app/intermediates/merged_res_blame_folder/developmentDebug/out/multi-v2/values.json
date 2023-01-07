@@ -1,8 +1,25 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\wht\\build\\app\\intermediates\\incremental\\mergeDevelopmentDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "C:\\Users\\hanan\\Desktop\\baabtra\\wht\\build\\app\\intermediates\\incremental\\mergeDevelopmentDebugResources\\merged.dir\\values\\values.xml",
             "map": [
+                {
+                    "source": "C:\\Users\\hanan\\Desktop\\baabtra\\wht\\android\\app\\src\\development\\res\\values\\ic_launcher_background.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "57",
+                        "endColumns": "56",
+                        "endOffsets": "109"
+                    },
+                    "to": {
+                        "startLines": "25",
+                        "startColumns": "4",
+                        "startOffsets": "1581",
+                        "endColumns": "56",
+                        "endOffsets": "1633"
+                    }
+                },
                 {
                     "source": "C:\\Users\\hanan\\.gradle\\caches\\transforms-3\\78a619fb1eadedad460d1eeb589b77d5\\transformed\\lifecycle-runtime-2.3.1\\res\\values\\values.xml",
                     "from": {
@@ -35,23 +52,6 @@
                         "startOffsets": "6534,7712",
                         "endColumns": "67,166",
                         "endOffsets": "6597,7874"
-                    }
-                },
-                {
-                    "source": "D:\\wht\\build\\app\\generated\\res\\google-services\\development\\debug\\values\\values.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "55,199,281,385,494,614,708",
-                        "endColumns": "143,81,103,108,119,93,70",
-                        "endOffsets": "194,276,380,489,609,703,774"
-                    },
-                    "to": {
-                        "startLines": "128,133,134,135,136,137,138",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "9073,9514,9596,9700,9809,9929,10023",
-                        "endColumns": "143,81,103,108,119,93,70",
-                        "endOffsets": "9212,9591,9695,9804,9924,10018,10089"
                     }
                 },
                 {
@@ -127,23 +127,6 @@
                     }
                 },
                 {
-                    "source": "D:\\wht\\android\\app\\src\\development\\res\\values\\ic_launcher_background.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "57",
-                        "endColumns": "56",
-                        "endOffsets": "109"
-                    },
-                    "to": {
-                        "startLines": "25",
-                        "startColumns": "4",
-                        "startOffsets": "1581",
-                        "endColumns": "56",
-                        "endOffsets": "1633"
-                    }
-                },
-                {
                     "source": "C:\\Users\\hanan\\.gradle\\caches\\transforms-3\\feadf51cdffd08d0049cb746009a9522\\transformed\\core-1.8.0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,89,90,94,95,96,97,103,113,146,167,200",
@@ -182,7 +165,24 @@
                     }
                 },
                 {
-                    "source": "D:\\wht\\android\\app\\src\\main\\res\\values\\styles.xml",
+                    "source": "C:\\Users\\hanan\\Desktop\\baabtra\\wht\\build\\app\\generated\\res\\google-services\\development\\debug\\values\\values.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,199,281,385,494,614,708",
+                        "endColumns": "143,81,103,108,119,93,70",
+                        "endOffsets": "194,276,380,489,609,703,774"
+                    },
+                    "to": {
+                        "startLines": "128,133,134,135,136,137,138",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "9073,9514,9596,9700,9809,9929,10023",
+                        "endColumns": "143,81,103,108,119,93,70",
+                        "endOffsets": "9212,9591,9695,9804,9924,10018,10089"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\hanan\\Desktop\\baabtra\\wht\\android\\app\\src\\main\\res\\values\\styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",

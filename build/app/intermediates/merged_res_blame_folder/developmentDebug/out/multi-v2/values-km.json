@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\wht\\build\\app\\intermediates\\incremental\\mergeDevelopmentDebugResources\\merged.dir\\values-km\\values-km.xml",
+            "outputFile": "C:\\Users\\hanan\\Desktop\\baabtra\\wht\\build\\app\\intermediates\\incremental\\mergeDevelopmentDebugResources\\merged.dir\\values-km\\values-km.xml",
             "map": [
                 {
                     "source": "C:\\Users\\hanan\\.gradle\\caches\\transforms-3\\feadf51cdffd08d0049cb746009a9522\\transformed\\core-1.8.0\\res\\values-km\\values-km.xml",

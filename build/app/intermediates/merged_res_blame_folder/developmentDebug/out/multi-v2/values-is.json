@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\wht\\build\\app\\intermediates\\incremental\\mergeDevelopmentDebugResources\\merged.dir\\values-is\\values-is.xml",
+            "outputFile": "C:\\Users\\hanan\\Desktop\\baabtra\\wht\\build\\app\\intermediates\\incremental\\mergeDevelopmentDebugResources\\merged.dir\\values-is\\values-is.xml",
             "map": [
                 {
                     "source": "C:\\Users\\hanan\\.gradle\\caches\\transforms-3\\6ba587f18e0cfb42db299785e64a7064\\transformed\\browser-1.4.0\\res\\values-is\\values-is.xml",

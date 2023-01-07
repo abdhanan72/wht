@@ -53,6 +53,7 @@ class AddProductBloc extends Bloc<AddProductEvent, AddProductState> {
           emit(ProductAddFailed());
         }
       }
+      
     });
   }
 }

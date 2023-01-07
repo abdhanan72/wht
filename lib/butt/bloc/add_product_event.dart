@@ -4,12 +4,13 @@ part of 'add_product_bloc.dart';
 abstract class AddProductEvent {}
 
 class ProductAddEvent extends AddProductEvent {
-  ProductAddEvent(
-      {required this.productname,
-      required this.productDetails,
-      required this.quantity,
-      required this.price,
-      required this.image,});
+  ProductAddEvent({
+    required this.productname,
+    required this.productDetails,
+    required this.quantity,
+    required this.price,
+    required this.image,
+  });
 
   final String productname;
   final String productDetails;
@@ -17,3 +18,5 @@ class ProductAddEvent extends AddProductEvent {
   final double price;
   final XFile image;
 }
+
+
