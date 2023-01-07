@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:motion_toast/motion_toast.dart';
 import 'package:my_add/butt/view/button.dart';
+import 'package:my_add/dashboard/view/dashboard.dart';
 import 'package:my_add/detail/view/detail.dart';
 import 'package:my_add/product/bloc/delete_bloc.dart';
 
@@ -24,7 +25,12 @@ class ViewProduct extends StatelessWidget {
       child: BlocListener<DeleteBloc, DeleteState>(
         listener: (context, state) {
           if (state is ProductDeleteSucess) {
-           
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => Dashboard(),
+                ));
+
             MotionToast(
               icon: Icons.done,
               primaryColor: Colors.red,
@@ -103,7 +109,8 @@ class ViewProduct extends StatelessWidget {
                                   IconButton(
                                       onPressed: () {
                                         _deletepro.add(DeleteProductEvent(
-                                            productId: productItems[index]['productid']
+                                            productId: productItems[index]
+                                                    ['productid']
                                                 .toString()));
                                       },
                                       icon: const Icon(Icons.delete_forever)),
